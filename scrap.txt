@@ -1,0 +1,9 @@
+Admin sql
+
+CREATE TABLE admins (
+    admin_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+insert
+INSERT INTO admins (username, password) VALUES ('admin1', 'password123');

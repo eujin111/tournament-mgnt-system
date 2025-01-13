@@ -1,0 +1,82 @@
+
+<?php
+$con = mysqli_connect('localhost','root','','tournamentmgnt');
+if(!$con){
+echo "feiled to connect";die;
+}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//collect info from from
+$username = $_POST['usernametm'];
+$password = $_POST['passwordtm'];
+
+//interact with db 
+$sql = "SELECT * FROM userstmt WHERE usernametm = '$username' and passwordtm ='$password' ";
+$res = mysqli_query($con,$sql);
+
+if(mysqli_num_rows($res) > 0){
+    header('Location: dashboard.php');
+}
+else{
+    echo " login failed" ;
+}
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETourna Login</title>
+    <link rel="stylesheet" href="../Assets/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <div class="logo">
+                <img src="../images/etour.svg" alt="ETourna Logo">
+            </div>
+            <form action="login.php" method="POST">
+                <input type="text" placeholder="Username" class="input-field" name="usernametm" required />
+                <input type="password" placeholder="Password" class="input-field" name="passwordtm" required />
+                <!-- <error>
+                <?php
+                    if(isset($_SESSION['logError'])){
+                        echo "<br><e style='margin-top: -.8rem;'>".$_SESSION['logError']."</e>";
+                        session_unset();
+                        session_destroy();
+                    }
+                ?>
+            </error> -->
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-btn" name='submit'>Log in</button>
+                <div class="register-link">
+                    <a href="register.php">Register Now</a> <span>|</span> <a href="admnlog.php">Not a User</a>
+                </div>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="../images/cypher.png" alt="Character Image">
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- //     // Verify the hashed password
+    //     if (password_verify($password, $user['password'])) {
+    //         session_start();
+    //         $_SESSION['username'] = $username; // Store username in the session
+    //         header("Location: dashboard.php"); // Redirect to the dashboard
+    //         exit;
+    //     } else {
+    //         echo "Invalid password. Please try again.";
+    //     }
+    // } else {
+    //     echo "User not found. Please register first.";
+    // }
+
+
+// Close the connection
+mysqli_close($conn); -->

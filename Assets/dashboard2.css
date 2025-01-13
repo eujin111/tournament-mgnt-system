@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 40px; 
+    border-bottom: 2px solid #ddd;
+    font-size: 14px;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
+    vertical-align: middle;
+}
+
+.user-info {
+    font-size: 14px;
+}
+.highlight {
+    color: black;
+}
+
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-icon {
+    font-size: 50px;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.team-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+
+.main-content {
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.participation-section,
+.tournaments-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.participation-card {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.score {
+    font-size: 24px;
+    color: black;
+}
+
+.view-more {
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+
+.matches-summary {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.matches-count {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.match-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+.ml2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tournament-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.register-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-btn.closed {
+    background-color: gray;
+    cursor: not-allowed;
+}
+.matches-section{
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 40%;
+    height: 60%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
