@@ -1,0 +1,196 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #151515;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151515;
+    padding: 20px 40px; 
+    border-bottom: 2px solid #C62300;
+    font-size: 14px;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
+    vertical-align: middle;
+}
+
+.user-info {
+    font-size: 14px;
+}
+.highlight {
+    color: black;
+}
+
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.user-info{
+    color: #fff;
+}
+.sidebar {
+    width: 20%;
+    background-color: #151515;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+    color: #fff;
+}
+
+h2{
+    background: linear-gradient(90deg,#C62300,#500073);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-icon {
+    font-size: 50px;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.team-name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+
+.main-content {
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.participation-section,
+.tournaments-section {
+    background-color: #202020;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.score{
+    background: linear-gradient(90deg,#C62300,#500073);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.participation-card {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.score {
+    font-size: 24px;
+    color: black;
+}
+
+.view-more {
+    font-size: 14px;
+    color: #C62300;
+    text-decoration: none;
+}
+
+.matches-summary {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.matches-count {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.match-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #C62300;
+}
+.ml2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tournament-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #C62300;
+}
+
+.register-btn {
+    background-color: #C62300;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-btn.closed {
+    background-color: #500073;
+    cursor: not-allowed;
+}
+.matches-section{
+    background-color: #202020;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    width: 40%;
+    height: 60%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #fff;
+}

@@ -11,14 +11,14 @@ body {
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #151515;
     overflow: hidden;
 }
 
 /* Main container */
 .login-container {
     display: flex;
-    background: #fff;
+    background: #151515;
 }
 
 /* Form Section */
@@ -27,7 +27,7 @@ body {
     padding: 40px 60px;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #fff;
+    background-color: #151515;
 }
 
 /* Logo */
@@ -42,14 +42,15 @@ body {
     padding: 10px;
     margin: 15px 0;
     border: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #fff;
     font-size: 18px;
     background-color: transparent;
     outline: none;
+    color: #fff;
 }
 
 .input-field::placeholder {
-    color: #aaa;
+    color: #ebebeb;
 }
 
 /* Forgot Password */
@@ -60,7 +61,7 @@ body {
 
 .forgot-password a {
     font-size: 14px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -72,26 +73,28 @@ body {
 .login-btn {
     width: 80%;
     padding: 12px;
-    background-color: #ddd;
+    background: linear-gradient(90deg,#C62300,#500073);
     border: none;
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .login-btn:hover {
-    background-color: #bbb;
+    background: linear-gradient(90deg,#C62300,#C62300);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Register Link */
 .register-link {
     font-size: 14px;
-    color: #000;
+    color: #fff;
 }
 
 .register-link a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -105,7 +108,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: #151515;
 }
 
 .image-container img {

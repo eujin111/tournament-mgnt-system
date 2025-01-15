@@ -1,0 +1,7 @@
+redd
+#C62300,
+purple
+#500073
+
+text
+#4e4e4e

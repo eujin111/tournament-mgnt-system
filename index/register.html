@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETourna Registration</title>
+    <link rel="stylesheet" href="../Assets/registerc.css">
+</head>
+<body>
+    <div class="registration-container">
+        <div class="registration-form">
+            <div class="logo">
+                <img src="../images/etourn.png" alt="ETourna Logo">
+            </div>
+            <form action="../homelogphp/register.php" method="POST">
+                <input type="text" name="full_name" placeholder="Full Name" class="input-field" required />
+                
+                </error>
+                <input type="email" name="email" placeholder="Email" class="input-field" required />
+
+                <input type="text" name="username" placeholder="Username" class="input-field" required />
+              
+                <input type="password" name="password" placeholder="Password" class="input-field" required />
+                
+                <input type="password" name="confirm_password" placeholder="Confirm Password" class="input-field" required />
+                
+                </error>
+                <div class="terms">
+                    <input type="checkbox" id="terms" required />
+                    <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                </div>
+                <button type="submit" name="register" class="register-btn">Register</button>
+                <div class="register-link">
+                    <a href="login.html">Have an Account ?</a> <span>|</span> <a href="adminlog.html">Not a User</a><span>|</span> <a href="index.html">Back</a>
+                </div>
+            </form>            
+        </div>
+        <div class="image-container">
+            <img src="../images/cypher.png" alt="Character Image">
+        </div>
+    </div>
+</body>
+</html>
